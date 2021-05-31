@@ -44,7 +44,8 @@ body {
   color: #000; }
 
 html, body {
-  overflow-x: hidden; }
+  overflow-x: hidden;
+  height: 100%; }
 
 img {
   display: block;
@@ -74,7 +75,7 @@ input, textarea, select {
           box-sizing: border-box;
   font-family: "Roboto", sans-serif;
   padding: 0 15px;
-  color: #4F4F4F;
+  color: #000;
   font-size: 16px;
   width: 100%;
   height: 60px;
@@ -407,6 +408,31 @@ h4 {
 
 .color-red {
   color: #EB5757; }
+
+.color-grey {
+  color: #333333; }
+  .color-grey:hover {
+    color: #2862AC; }
+
+.wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  min-height: 100%; }
+
+.content {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 auto;
+          flex: 1 0 auto; }
+
+footer {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 auto;
+          flex: 0 0 auto; }
 
 header {
   background: #fff;
@@ -744,7 +770,8 @@ footer {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 0 15px; }
+  padding: 0 15px;
+  color: #000; }
 
 .select2-container--default .select2-selection--single .select2-selection__arrow {
   right: 15px;
@@ -916,11 +943,6 @@ footer {
 .ui-priority-secondary, .ui-widget-content .ui-priority-secondary, .ui-widget-header .ui-priority-secondary {
   opacity: .5; }
 
-/*==========  Desktop First  ==========*/
-/* Large Devices, Wide Screens */
-@media only screen and (max-width: 1200px) {
-  /**/ }
-
 /* Medium Devices, Desktops */
 @media only screen and (max-width: 992px) {
   header .menu, footer .menu {
@@ -932,7 +954,9 @@ footer {
     display: -ms-flexbox;
     display: flex; }
   .main-slider-item__images {
-    margin: 0 0 40px; }
+    margin: 40px 0 0; }
+  .main-slider-item {
+    margin: 20px 0 0; }
   .img-map {
     max-width: 100%;
     left: 50%;
