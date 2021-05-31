@@ -1,0 +1,92 @@
+@import "vars"
+
+/*==========  Desktop First  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width: 1200px)
+  /**/
+
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width: 992px)
+  header, footer
+    .menu
+      display: none
+    .logo
+      margin: 0 auto 0 0
+
+  .btn-burger
+    display: flex
+
+/* Small Devices, Tablets */
+@media only screen and (max-width: 768px)
+  .line-top h2, h2
+    font-size: 30px
+
+  h1
+    font-size: 40px
+    margin: 0 0 30px
+
+  .box-text
+    font-size: 16px
+
+  .page-contacts
+    padding: 35px 0 45px
+
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width: 650px)
+  header
+    .header-item__content
+      display: none
+    .header-item__icon
+      margin: 0
+
+  footer
+    .logo
+      width: 100%
+      justify-content: center
+
+      margin: 0 auto 10px
+    .header-item
+      margin: 0 auto
+
+  .header-item__content a
+    font-size: 14px
+
+  h1
+    font-size: 30px
+    margin: 0 0 20px
+
+  .line-top h2, h2
+    font-size: 26px
+
+
+@media only screen and (max-width: 480px)
+  .logo-icon
+    width: 40px
+    height: 40px
+    min-width: 40px
+
+  .logo
+    font-size: 10px
+
+  .breadcrumb
+    font-size: 14px
+
+  .line-top, footer
+    padding: 20px 0
+
+  header
+    padding: 15px 0
+
+  .list-pay
+    margin: 30px 0 10px
+    li
+      margin-right: 20px
+
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width: 320px)
+  /**/
+
